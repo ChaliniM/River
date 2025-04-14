@@ -15,7 +15,7 @@ f1 = st.file_uploader("Upload a CSV/XLSX file", type=["csv", "xlsx", "xls"])
 if f1 is not None:
     df = pd.read_csv(f1)
 else:
-    default_path = "C:/Users/chali/Downloads/sample_water_quality_data.csv"
+    default_path = "sample_water_quality_data.csv"
     df = pd.read_csv(default_path)
     st.info("Using default dataset from local path.")
 if 'Date' in df.columns:
