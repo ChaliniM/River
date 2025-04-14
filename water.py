@@ -139,11 +139,15 @@ data1 = px.scatter(filtered_df, x='BOD', y='pH', size='Temperature')
 
 # Update the layout and titles for the chart
 data1.update_layout(
-    title='Relationship between BOD and pH using Scatter Plot',
-    titlefont=dict(size=20),
-    xaxis=dict(title='BOD (mg/l)', titlefont=dict(size=19)),
-    yaxis=dict(title='pH', titlefont=dict(size=19))
+    title=dict(
+        text='Relationship between BOD and pH using Scatter Plot',
+        font=dict(size=20)
+    ),
+    xaxis=dict(title='BOD (mg/l)', font=dict(size=19)),
+    yaxis=dict(title='pH', font=dict(size=19))
 )
+
+
 st.subheader(" WQI vs Key Chemical Parameters")
 if all(col in filtered_df.columns for col in ['WQI', 'pH', 'DO', 'BOD']):
         fig_ph = px.scatter(filtered_df, x='pH', y='WQI', trendline="ols", title="WQI vs pH")
