@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings('ignore')
 st.set_page_config(page_title="River Water Quality Dashboard", page_icon=":bar_chart:", layout="wide")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
-st.title("River Water Quality Dashboard")
+st.title("Predicting River Water Quality using Environmental Indicators")
 
 # File upload
 f1 = st.file_uploader("Upload a CSV/XLSX file", type=["csv", "xlsx", "xls"])
