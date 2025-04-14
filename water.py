@@ -143,9 +143,20 @@ data1.update_layout(
         text='Relationship between BOD and pH using Scatter Plot',
         font=dict(size=20)
     ),
-    xaxis=dict(title='BOD (mg/l)', font=dict(size=19)),
-    yaxis=dict(title='pH', font=dict(size=19))
+    xaxis=dict(
+        title=dict(
+            text='BOD (mg/l)',
+            font=dict(size=19)
+        )
+    ),
+    yaxis=dict(
+        title=dict(
+            text='pH',
+            font=dict(size=19)
+        )
+    )
 )
+
 
 
 st.subheader(" WQI vs Key Chemical Parameters")
