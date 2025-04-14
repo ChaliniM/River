@@ -3,4 +3,4 @@ plotly
 pandas
 matplotlib
 seaborn
-statsmodel
+statsmodels
