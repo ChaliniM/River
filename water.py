@@ -138,7 +138,7 @@ with st.container():
 data1 = px.scatter(filtered_df, x='BOD', y='pH', size='Temperature')
 
 # Update the layout and titles for the chart
-data1['layout'].update(
+data1.update_layout(
     title='Relationship between BOD and pH using Scatter Plot',
     titlefont=dict(size=20),
     xaxis=dict(title='BOD (mg/l)', titlefont=dict(size=19)),
