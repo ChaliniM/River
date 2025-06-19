@@ -2,6 +2,7 @@
 
 The Water Quality Analysis Dashboard is an interactive web application developed using Streamlit. It provides real-time visual insights into key water quality parameters such as pH, Biological Oxygen Demand (BOD), and Temperature across different monitoring stations. Users can filter data by date and station to explore environmental trends. The dashboard features line and pie charts for easy data interpretation and is designed with a clean, user-friendly interface.
 
+
 This is a simple and interactive dashboard built using **Python and Streamlit** to analyze and visualize water quality data. It helps users understand water conditions such as pH, BOD (Biological Oxygen Demand), and Temperature across different stations over time.
 
 🔗 **Live Dashboard**: [Click to View](https://2l8s2qfr8kbfsugcpappuf7.streamlit.app/)
@@ -43,7 +44,7 @@ It shows how water quality parameters like pH, BOD, and Temperature change over 
 
 You use line charts, which are typical for visualizing time series trends.
 
-
+---
 ## Project Outcome:
 Successfully developed an interactive time series dashboard using Streamlit to monitor water quality.
 
